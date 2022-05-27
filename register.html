@@ -1,0 +1,76 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Get Set Travel</title>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="style.css"> 
+</head>
+<script>  
+    var check = function() {
+  if (document.getElementById('pwd').value ==
+    document.getElementById('cpwd').value) {
+    document.getElementById('message').style.color = 'green';
+    document.getElementById('message').innerHTML = 'Password matching';
+  } else {
+    document.getElementById('message').style.color = 'red';
+    document.getElementById('message').innerHTML = 'Password not matching';
+  }
+}
+    </script>  
+<body>
+<header>
+    <div id="menu-bar" class="fas fa-bars"></div>
+    <a href="#" class="logo"><span>G</span>et<span> S</span>et<span> T</span>ravel</a>
+    <nav class="navbar">
+        <a href="index.html">home</a>
+    </nav>
+</header>
+<section class="book" id="book">
+    <p></br></br></br></br></p>
+    <h1 class="heading">
+        <span>r</span>
+        <span>e</span>
+        <span>g</span>
+        <span>i</span>
+        <span>s</span>
+        <span>t</span>
+        <span>e</span>
+        <span>r</span>
+        <span class="space"></span>
+        <span>n</span>
+        <span>o</span>
+        <span>w</span>
+    </h1>
+    <div class="row">
+        <div class="image">
+            <img src="images/book-img.svg" alt="">
+        </div>
+        <form action="register.php" method="POST">
+            <div class="inputBox">
+                <h3>Enter your First Name</h3>
+                <input type="text" placeholder="First name" name="fname" required>
+            </div>
+            <div class="inputBox">
+                <h3>Enter your last name</h3>
+                <input type="text" placeholder="Last name" name="lname">
+            </div>
+            <div class="inputBox">
+                <h3>Enter your Email ID</h3>
+                <input type="text" placeholder="Email id" name="eid" required>
+            </div>
+            <div class="inputBox">
+                <h3>Enter the password</h3>
+                <input type="password" placeholder="Password" name="pwd" id="pwd" onkeyup='check();'required>
+            </div>
+            <div class="inputBox">
+                <h3>Confirm the password</h3>
+                <input type="password" placeholder="Confirm Password" name="cpwd" id="cpwd" onkeyup='check();' required><br>
+                <h3><span id='message'></span></h3>
+            </div>
+            <input type="submit" class="btn" value="Register now">
+        </form>
+    </div> 
+</body>
+</html>

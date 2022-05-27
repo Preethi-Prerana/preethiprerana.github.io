@@ -1,0 +1,501 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Get Set Travel</title>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script> 
+    <link rel="stylesheet" href="style.css"> 
+</head>
+<body> 
+<header>
+    <div id="menu-bar" class="fas fa-bars"></div>
+    <a href="#" class="logo"><span>G</span>et<span> S</span>et<span> T</span>ravel</a>
+    <nav class="navbar">
+        <a href="#home">home</a>
+        <a href="#packages">packages</a>
+        <a href="#services">services</a>
+        <a href="#review">review</a>
+        <a href="#contact">contact us</a>
+    </nav>
+    <div class="icons">
+        <i id="search-btn"></i>
+        <i class="fas fa-user" id="login-btn"></i>
+    </div>
+</header>
+<div class="login-form-container">
+
+    <i class="fas fa-times" id="form-close"></i>
+
+    <form name="f1" id="login" action="auth.php" onsubmit = "return validation()" method = "POST">
+        <h3>login</h3>
+        <input type="email" class="box" placeholder="Enter your Email id" name="Emaill">
+        <input type="password" class="box" placeholder="Enter your password" name="pword">
+        <input type="submit" value="login" class="btn">
+        <input type="checkbox" id="remember">
+        <label for="remember">Remember me</label>
+        <p>Forgot password? <a href="fpword.html">Click Here</a></p>
+        <p>Don't have an account? <a href="register.html">Register now</a></p>
+    </form>
+</div>
+<script>
+function validation()  
+            {  
+                var id=document.f1.Emaill.value;  
+                var ps=document.f1.pword.value;  
+                if(id.length=="" && ps.length=="") {  
+                    alert("Email ID and Password fields are empty");  
+                    return false;  
+                }  
+                else  
+                {  
+                    if(id.length=="") {  
+                        alert("Email ID is empty");  
+                        return false;  
+                    }   
+                    if (ps.length=="") {  
+                    alert("Password field is empty");  
+                    return false;  
+                    }  
+                }                             
+            }  
+        </script>  
+<section class="home" id="home">
+
+    <div class="content">
+        <h3>adventure is worthwhile</h3>
+        <p>discover new places with us</p>
+        <p>get,set,travel....</p>
+    </div>
+
+    <div class="controls">
+        <span class="vid-btn active" data-src="images/vid-1.mp4"></span>
+        <span class="vid-btn" data-src="images/vid-2.mp4"></span>
+        <span class="vid-btn" data-src="images/vid-3.mp4"></span>
+        <span class="vid-btn" data-src="images/vid-4.mp4"></span>
+        <span class="vid-btn" data-src="images/vid-5.mp4"></span>
+    </div>
+
+    <div class="video-container">
+        <video src="images/vid-1.mp4" id="video-slider" loop autoplay muted></video>
+    </div>
+
+</section>
+<section class="packages" id="packages">
+
+    <h1 class="heading">
+        <span>p</span>
+        <span>a</span>
+        <span>c</span>
+        <span>k</span>
+        <span>a</span>
+        <span>g</span>
+        <span>e</span>
+        <span>s</span>
+    </h1>
+
+    <div class="box-container">
+
+        <div class="box">
+            <img src="images/mumbai.jpg" alt="">
+            <div class="content">
+                <h3> <i class="fas fa-map-marker-alt"></i> MUMBAI </h3>
+                <p>Mumbai is the city that never sleeps and that comes as no surprise because there’s so much to do
+                     here.Mumbai is Famous For: Street Markets and High-End Malls</br></br></br></br></p>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <div class="price"> ₹5650.00 <span>₹8500.00</span> </div>
+                <a href="b_mum.html" class="btn">book now</a>
+            </div>
+        </div>
+
+        <div class="box">
+            <img src="images/packages/goa.jpg" alt="">
+            <div class="content">
+                <h3> <i class="fas fa-map-marker-alt"></i> GOA </h3>
+                <p>Goa is one of the most favorite destination among Indian tourists due to its pristine beaches.It is one of the best, beautiful and favorite tourist destinations in India not only because of beaches, but also for its pleasant weather, happening nightlife, delectable seafood, thrilling water activities, and more.</p>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <div class="price"> ₹3980.00 <span>₹5950.00</span> </div>
+                <a href="b_goa.html" class="btn">book now</a>
+            </div>
+        </div>
+
+        <div class="box">
+            <img src="images/packages/kashmir.jpg" alt="">
+            <div class="content">
+                <h3> <i class="fas fa-map-marker-alt"></i> KASHMIR </h3>
+                <p>Jammu and Kashmir is home to several valleys and is also famous for its scenic beauty, flower gardens, apple farms and more. It attracts tourists for its unique handicrafts and the world-famous Kashmiri Shawls.</br></br></p>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                </div>
+                <div class="price"> ₹10500.00 <span>₹15900.00</span> </div>
+                <a href="b_kash.html" class="btn">book now</a>
+            </div>
+        </div>
+
+        <div class="box">
+            <img src="images/packages/tamilnadu.jpg" alt="">
+            <div class="content">
+                <h3> <i class="fas fa-map-marker-alt"></i> TAMILNADU </h3>
+                <p>It is a state in Southern India known for its temples and architecture, food, movies and classical Indian dance and Carnatic music.</br></br></br></br></br></p>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <div class="price"> ₹4750.50 <span>₹9560.00</span> </div>
+                <a href="b_tam.html" class="btn">book now</a>
+            </div>
+        </div>
+
+        <div class="box">
+            <img src="images/packages/agra.jpg" alt="">
+            <div class="content">
+                <h3> <i class="fas fa-map-marker-alt"></i> AGRA </h3>
+                <p>Agra city is a part of the Golden Tourism Triangle and the other members of this are Delhi and Jaipur. Agra has been honored as the country's only city with 3 UNESCO World Heritage Sites.Agra is best known for the Taj Mahal.</br></br></p>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                </div>
+                <div class="price"> ₹9500.00 <span>₹12000.00</span> </div>
+                <a href="b_agra.html" class="btn">book now</a>
+            </div>
+        </div>
+
+        <div class="box">
+            <img src="images/packages/karnataka.jpg" alt="">
+            <div class="content">
+                <h3> <i class="fas fa-map-marker-alt"></i> KARNATAKA </h3>
+                <p>Close to the Arabian Sea and the Laccadive Sea, Karnataka is known for its beautiful yet unpopulated beaches and rich culture.The state is famous for its natural, cultural and architectural heritage and there are plenty of places one can visit on his/her trip to Karnataka.</p>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                </div>
+                <div class="price"> ₹4800.00 <span>₹8300.00</span> </div>
+                <a href="b_kar.html" class="btn">book now</a>
+            </div>
+        </div>
+
+        <div class="box">
+            <img src="images/packages/uttarpradesh.jpg" alt="">
+            <div class="content">
+                <h3> <i class="fas fa-map-marker-alt"></i> uttar Pradesh </h3>
+                <p>Uttar Pradesh is known for its rich culture and tradition. It is home to Ayodhya and Mathura birthplace of Lord Rama,Lord Krishna and Bhgwan Parshuram respectively.Taj Mahal, one of the New Seven Wonders of the World in Agra is also located in Uttar Pradesh.</p>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <div class="price"> ₹7900.00 <span>₹11500.00</span> </div>
+                <a href="b_up.html" class="btn">book now</a>
+            </div>
+        </div>
+
+        <div class="box">
+            <img src="images/packages/rajasthan.jpg" alt="">
+            <div class="content">
+                <h3> <i class="fas fa-map-marker-alt"></i> Rajasthan</h3>
+                <p>Despite being a desert land, Rajasthan boats a unique fact which says that it is one of the top five Indian states with the maximum number of lakes. The state is also home to the largest inland Salt Lake in India, which is the Sambhar Salt Lake in the Thar Desert.</p>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <div class="price"> ₹6500.00 <span>₹9500.00</span> </div>
+                <a href="b_raj.html" class="btn">book now</a>
+            </div>
+        </div>
+
+        <div class="box">
+            <img src="images/packages/darjeeling.jpg" alt="">
+            <div class="content">
+                <h3> <i class="fas fa-map-marker-alt"></i>Darjeeling</h3>
+                <p>The eye caching valleys, meandering rivers and of course the lush green tea gardens are the unique features of Darjeeling . Beside all these the main attractions of this popular hill stations are Himalayan Mountaineering Institute (HMI) , Himalayan Zoo , Tiger Hill , Rock Garden , Batashiya Loop.</p>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                </div>
+                <div class="price"> ₹6500.00 <span>₹9500.00</span> </div>
+                <a href="b_darj.html" class="btn">book now</a>
+            </div>
+        </div>
+
+        <div class="box">
+            <img src="images/packages/kerala.jpg" alt="">
+            <div class="content">
+                <h3> <i class="fas fa-map-marker-alt"></i>Kerala</h3>
+                <p>Known as God's Own Country, Spice Garden of India, Land of Coconuts, Land of Trees, The Jewel of South India,Kerala is well-known for its mesmerizing backwaters, ecotourism initiatives, scenic beauty, amazing beaches, and mouthwatering cuisine.</p>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                </div>
+                <div class="price"> ₹8999.00 <span>₹12200.00</span> </div>
+                <a href="b_kera.html" class="btn">book now</a>
+            </div>
+        </div>
+
+        <div class="box">
+            <img src="images/packages/himalayas.jpg" alt="">
+            <div class="content">
+                <h3> <i class="fas fa-map-marker-alt"></i>Himalayas</h3>
+                <p>The beauty of the Himalayas is in their unique rustic, calm, tranquility; an unperturbed natural aura - it's no wonder then, that tests show this mountain range is geographically alive, growing a quarter of an inch every year!</p>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <div class="price"> ₹12500.00 <span>₹18400.00</span> </div>
+                <a href="b_him.html" class="btn">book now</a>
+            </div>
+        </div>
+
+        <div class="box">
+            <img src="images/packages/maldives.jpg" alt="">
+            <div class="content">
+                <h3> <i class="fas fa-map-marker-alt"></i>Maldives</h3>
+                <p>The Maldives, a collection of more than a thousand islands in the Indian Ocean, is known for its clear emerald waters, beautiful beaches that stretch as far as the eye can see, and of course, luxurious overwater bungalows.</p>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <div class="price"> ₹16800.00 <span>₹25500.00</span> </div>
+                <a href="b_mal.html" class="btn">book now</a>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="services" id="services">
+    <h1 class="heading">
+        <span>s</span>
+        <span>e</span>
+        <span>r</span>
+        <span>v</span>
+        <span>i</span>
+        <span>c</span>
+        <span>e</span>
+        <span>s</span>
+    </h1>
+
+    <div class="box-container">
+        <div class="box">
+            <i class="fas fa-hotel"></i>
+            <h3>affordable hotels</h3>
+            <p>We respond to all the travelers seeking budget accommodation hotel clean, comfortable and affordable hotel located in a safe and friendly environment.</p>
+        </div>
+        <div class="box">
+            <i class="fas fa-utensils"></i>
+            <h3>food and drinks</h3>
+            <p>"Laughter is brightest where the food is best",we assure that we provide healthy food and drinks during your travel.</p>
+        </div>
+        <div class="box">
+            <i class="fas fa-bullhorn"></i>
+            <h3>safety guide</h3>
+            <p>Safety guideliness would be given often to make your travel safe and secure</p>
+        </div>
+        <div class="box">
+            <i class="fas fa-globe-asia"></i>
+            <h3>around the world</h3>
+            <p>All over India, all over the World, even the remotest parts of the world we cover,we care from the time you leave your home till your back you are never alone you are under the our care !!!</p>
+        </div>
+        <div class="box">
+            <i class="fas fa-plane"></i>
+            <h3>fastest travel</h3>
+            <p>We ensure you the best,quick and safe means of transport for your journey!</p>
+        </div>
+        <div class="box">
+            <i class="fas fa-hiking"></i>
+            <h3>adventures</h3>
+            <p>"Live with no excuses and travel with no regrets".Adventure expands and broaden our mind and makes us learn new and unique things which were unknown before. We assure you an adventurous travel.</p>
+        </div>
+
+    </div>
+
+</section>
+<section class="review" id="review">
+
+    <h1 class="heading">
+        <span>r</span>
+        <span>e</span>
+        <span>v</span>
+        <span>i</span>
+        <span>e</span>
+        <span>w</span>
+    </h1>
+
+    <div class="swiper-container review-slider">
+
+        <div class="swiper-wrapper">
+
+            <div class="swiper-slide">
+                <div class="box">
+                    <img src="images/pic1.png" alt="">
+                    <h3>Jenny</h3>
+                    <p>We took a 6N/7D trip to Himalayas via kerala.It was a wonderful experience.The hotels suggested by them were really nice providing best in class food. We had no issues regarding booking and payment of hotels. Everything was been already taken care by yaatra. We just relaxed and enjoyed the whole trip. Even the driver provided by them for the sightseeing was very polite, disciplined and generous.Yugal, our travel agent did a wonderful job. I would definitely consider him for our next vacations.</p>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="box">
+                    <img src="images/pic2.png" alt="">
+                    <h3>Alex</h3>
+                    <p>Hotels were good, clean and comfortable. Staff were great & courteous. Took care of all small requests. Food was amazing at all places.Hassle free experience.Hotels were comfortable and tour was smooth.Amazing & memorable trip.</p>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="box">
+                    <img src="images/pic3.png" alt="">
+                    <h3>Hina</h3>
+                    <p>he trip was nicely planned and executed. The Hotel was very comfortable, a little away from the main city yet very nicely located. The staff was courteous and cooperative. Taxi and cab services were excellent. The site seeing was wonderful. Overall a very enjoyable trip.</p>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="box">
+                    <img src="images/pic4.png" alt="">
+                    <h3>Vishnu</h3>
+                    <p>The trip was well planned.. everything was pre-booked and cordinator was available at all times making sure taht thing are going appropriately.. very good services by Darjeeling hills</p>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+<section class="contact" id="contact">
+    <h1 class="heading">
+        <span>c</span>
+        <span>o</span>
+        <span>n</span>
+        <span>t</span>
+        <span>a</span>
+        <span>c</span>
+        <span>t</span>
+        <span class="space"></span>
+        <span>U</span>
+        <span>S</span>
+    </h1>
+
+    <div class="row">
+
+        <div class="image">
+            <img src="images/contact-img.svg" alt="">
+        </div>
+
+        <form action="contactus.php" method="POST">
+            <div class="inputBox">
+                <input type="text" placeholder="Name" name="Name">
+                <input type="email" placeholder="Email" name="Email">
+            </div>
+            <div class="inputBox">
+                <input type="number" placeholder="Number" name="Number">
+                <input type="text" placeholder="Subject" name="Subject">
+            </div>
+            <textarea placeholder="Message" name="Message" id="" cols="30" rows="10"></textarea>
+            <input type="submit" class="btn" value="send message" >
+        </form>
+    </div>
+    
+</section>
+<section class="footer">
+
+    <div class="box-container">
+
+        <div class="box">
+            <h3>about us</h3>
+            <p>“Travel is the main thing you purchase that makes you more extravagant”. We, at ‘GET SET TRAVEL’, swear by this and put stock in satisfying travel dreams that make you perpetually rich constantly. We have been moving excellent encounters for a considerable length of time through our cutting edge planned occasion bundles and other fundamental travel administrations. We rouse our clients to carry on with a rich life, brimming with extraordinary travel encounters.</p>
+        </div>
+        <div class="box">
+            <h3>branch locations</h3>
+            <a href="#">India</a>
+        </div>
+        <div class="box">
+            <h3>quick links</h3>
+            <a href="#home">home</a>
+            <a href="#packages">packages</a>
+            <a href="#services">services</a>
+            <a href="#review">review</a>
+            <a href="#contact">contact us</a>
+        </div>
+        <div class="box">
+            <h3>follow us</h3>
+            <a href="#">facebook</a>
+            <a href="#">instagram</a>
+            <a href="#">twitter</a>
+            <a href="#">LinkedIn</a>
+        </div>
+
+    </div>
+
+    <h1 class="credit"> created by <span>Preeti Prerana and Medha Hegde</span> | all rights reserved! </h1>
+</section>
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
